@@ -166,7 +166,7 @@ void TrieNode::DeleteWord(string word,TrieNode *root)
 	}
 	TrieNode* tmp=root;
 	TrieNode* prev=NULL;
-	 for(int i=0;i<word.size();i++)
+	for(int i=0;i<word.size();i++)
         {
         	int k=word[i]-97;
         	if(tmp->charecter[k]==NULL)
@@ -178,7 +178,7 @@ void TrieNode::DeleteWord(string word,TrieNode *root)
         }
         tmp=root;
         int flg=0;
-         for(int i=0;i<word.size();i++)
+        for(int i=0;i<word.size();i++)
         {
         	int k=word[i]-97;
         	prev=tmp;
@@ -209,14 +209,14 @@ void TrieNode::DeleteWord(string word,TrieNode *root)
 
 void TrieNode::ModifyWord(string word,TrieNode *root)
 {
-    if(root==NULL)
+    	if(root==NULL)
 	{
 	     cout<<"List is Empty\n";
 	     return;
 	}
 	TrieNode* tmp=root;
 	TrieNode* prev=NULL;
-	 for(int i=0;i<word.size();i++)
+	for(int i=0;i<word.size();i++)
         {
         	int k=word[i]-97;
         	if(tmp->charecter[k]==NULL)
@@ -272,7 +272,7 @@ void TrieNode::ModifyWord(string word,TrieNode *root)
 void TrieNode::Count_No_Words(TrieNode *root)
 {
 	if(root==NULL)
-	return;
+		return;
 	int cnt=root->count;
 	cout<<"Number of Words in Dictionary:- "<<cnt<<endl;
 }
