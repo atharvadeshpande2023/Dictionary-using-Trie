@@ -71,10 +71,3 @@ int main()
     //root->Addword("",root);
     return 0;
 }
-
-
-
-
-
-
-
